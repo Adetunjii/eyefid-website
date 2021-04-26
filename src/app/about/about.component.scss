@@ -1,0 +1,221 @@
+@import "../../assets/scss/config.scss";
+
+.about {
+  overflow-x: hidden;
+  &-intro {
+    background: $primary-color;
+    padding-bottom: 0;
+    padding-left: 20px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    &-content {
+      flex: 0 0 45%;
+      padding-top: 20px;
+
+      h1 {
+        font-size: 28px;
+        color: $header-color;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 150%;
+        color: $text-color;
+      }
+    }
+
+    &-img {
+      flex: 0 0 55%;
+      display: flex;
+      justify-content: flex-end;
+      img {
+        margin-top: 50px;
+        left: 0;
+        width: 300px;
+        height: 300px;
+      }
+    }
+  }
+}
+
+.objective {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 20px;
+
+  h1 {
+    flex: 0 0 40%;
+    font-size: 28px;
+    line-height: 40px;
+    padding: 0;
+    margin: 0;
+    color: $header-color;
+  }
+
+  p {
+    flex: 0 0 50%;
+    margin: 0;
+    color: $text-color;
+    font-size: 16px;
+    line-height: 150%;
+  }
+}
+
+.get-in-touch {
+  background: #fff;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px;
+
+  &-intro {
+    flex: 0 0 40%;
+    h1 {
+      color: $header-color;
+      font-size: 22px;
+    }
+
+    p {
+      color: $text-color;
+      font-size: 16px;
+      line-height: 150%;
+      width: 70%;
+    }
+  }
+
+  .form {
+    flex: 0 0 40%;
+  }
+}
+
+input,
+textarea {
+  border: none;
+  border: 1px solid $text-color;
+  margin-bottom: 20px;
+  padding: 20px;
+  width: 85%;
+  border-radius: 10px;
+}
+
+.form-group {
+  display: flex;
+
+  input {
+    flex: 0 0 35%;
+    padding: 20px;
+    width: 50%;
+    margin-right: 20px;
+    border-radius: 10px;
+  }
+}
+
+@include media-lg {
+  .about {
+    overflow-x: hidden;
+    &-intro {
+      background: $primary-color;
+      padding-bottom: 0;
+      padding-left: 100px;
+      padding-top: 50px;
+      display: flex;
+      &-content {
+        flex: 0 0 45%;
+        padding-top: 100px;
+
+        h1 {
+          font-size: 42px;
+          color: $header-color;
+        }
+
+        p {
+          font-size: 18px;
+          line-height: 150%;
+          color: $text-color;
+        }
+      }
+
+      &-img {
+        flex: 0 0 55%;
+        display: flex;
+        justify-content: flex-end;
+        img {
+          margin-top: -50px;
+          left: 0;
+          width: 600px;
+          height: 600px;
+        }
+      }
+    }
+  }
+
+  .objective {
+    display: flex;
+    padding: 50px 100px;
+
+    h1 {
+      flex: 0 0 40%;
+      font-size: 38px;
+      line-height: 40px;
+      padding: 0;
+      margin: 0;
+      color: $header-color;
+    }
+
+    p {
+      flex: 0 0 40%;
+      margin: 0;
+      color: $text-color;
+      line-height: 150%;
+    }
+  }
+
+  .get-in-touch {
+    background: #fff;
+    padding: 0 20px;
+    display: flex;
+    padding: 20px 100px;
+
+    &-intro {
+      flex: 0 0 40%;
+      h1 {
+        color: $header-color;
+        font-size: 32px;
+      }
+
+      p {
+        color: $text-color;
+        font-size: 16px;
+        line-height: 150%;
+        width: 70%;
+      }
+    }
+
+    .form {
+      flex: 0 0 40%;
+    }
+  }
+
+  input,
+  textarea {
+    border: none;
+    border: 1px solid $text-color;
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .form-group {
+    display: flex;
+
+    input {
+      flex: 0 0 44%;
+      padding: 20px;
+      width: 50%;
+      margin-right: 20px;
+      border-radius: 10px;
+    }
+  }
+}

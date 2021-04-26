@@ -1,0 +1,23 @@
+$primary-color: #eaf8ff;
+$accent-color: rgba(246, 236, 255, 0.25);
+$secondary-color: #f3f0f7;
+$header-color: #2f2f2f;
+$text-color: #828685;
+
+@mixin media-md {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin media-lg {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin media-xl {
+  @media screen and (min-width: 1600px) {
+    @content;
+  }
+}

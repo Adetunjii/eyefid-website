@@ -1,0 +1,121 @@
+@import "../../../../assets/scss/config.scss";
+
+.nav {
+  background-color: $primary-color;
+  padding: 0 20px;
+  display: flex;
+  flex: row;
+  align-items: center;
+  box-shadow: 1px 1px 3px -3px #000;
+  &-logo {
+    flex: 0 0 10%;
+    &:focus {
+      outline: none;
+    }
+    img {
+      height: 70px;
+      width: 70px;
+      object-fit: contain;
+    }
+  }
+
+  &-items {
+    display: none;
+    position: absolute;
+    width: 85vw;
+    text-align: left;
+    top: 10%;
+    left: 0;
+    margin: 0;
+    padding: 50px 30px;
+    list-style: none;
+    background: $primary-color;
+    z-index: 999;
+    height: 80vh;
+  }
+
+  &-item {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    color: $header-color;
+    cursor: pointer;
+    margin-bottom: 30px;
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.nav-toggle:checked ~ .nav-items {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+@include media-lg {
+  .nav {
+    background-color: $primary-color;
+    padding: 0 100px;
+    display: flex;
+    flex: row;
+    align-items: center;
+
+    &-logo {
+      flex: 0 0 10%;
+      &:focus {
+        outline: none;
+      }
+      img {
+        height: 70px;
+        width: 70px;
+        object-fit: contain;
+      }
+    }
+
+    &-items {
+      flex: 0 0 70%;
+      display: flex;
+      list-style: none;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &-item {
+      font-size: 16px;
+      font-weight: normal;
+      color: $header-color;
+      margin: 0 30px;
+      cursor: pointer;
+      &:focus {
+        outline: none;
+      }
+    }
+
+    &-auth {
+      flex: 0 0 10%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 100px;
+      background: #192b3f;
+      width: 10%;
+      padding: 15px;
+      text-align: center;
+      color: #fff;
+      gap: 10px;
+      font-size: 14px;
+    }
+  }
+}

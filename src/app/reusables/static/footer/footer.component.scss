@@ -1,0 +1,75 @@
+@import "../../../../assets/scss/config.scss";
+
+.footer {
+  background: $primary-color;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  &-logo {
+    flex: 0 0 20%;
+    img {
+      height: 100px;
+      width: 100px;
+      object-fit: contain;
+    }
+  }
+
+  h1 {
+    color: $header-color;
+    font-size: 28px;
+  }
+
+  p {
+    color: $text-color;
+    line-height: 150%;
+  }
+
+  a {
+    color: $header-color;
+    cursor: pointer;
+    text-decoration: none;
+  }
+}
+
+@include media-lg {
+  .footer {
+    background: $primary-color;
+    padding: 20px 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    &-logo {
+      flex: 0 0 20%;
+      img {
+        height: 100px;
+        width: 100px;
+        object-fit: contain;
+      }
+    }
+
+    .wwa {
+      flex: 0 0 40%;
+    }
+    .details {
+      flex: 0 0 30%;
+    }
+
+    h1 {
+      color: $header-color;
+    }
+
+    p {
+      color: $text-color;
+      line-height: 150%;
+    }
+
+    a {
+      color: $header-color;
+      cursor: pointer;
+      text-decoration: none;
+    }
+  }
+}
