@@ -85,6 +85,7 @@
     }
 
     &-items {
+      all: unset;
       flex: 0 0 70%;
       display: flex;
       list-style: none;
@@ -117,5 +118,9 @@
       gap: 10px;
       font-size: 14px;
     }
+  }
+
+  .nav-toggle-label {
+    display: none;
   }
 }

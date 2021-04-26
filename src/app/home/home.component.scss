@@ -121,7 +121,6 @@
   padding: 0 20px;
   justify-content: center;
   align-items: center;
-  scroll-snap-align: center;
 
   .card {
     width: 80%;
@@ -349,10 +348,10 @@
   .card-group {
     height: 100vh;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     padding: 0 100px;
     justify-content: space-between;
-    scroll-snap-align: center;
 
     .card {
       width: 75%;
@@ -418,6 +417,7 @@
   .cwbp {
     background: #eaf8ff75;
     display: flex;
+    flex-direction: row;
     align-items: center;
     padding: 50px 100px;
     margin-top: 20px;
@@ -452,6 +452,7 @@
 
   .swae {
     display: flex;
+    flex-direction: row;
     margin-top: 20px;
     padding: 20px 100px;
     align-items: center;

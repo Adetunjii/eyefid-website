@@ -120,6 +120,7 @@ textarea {
       padding-left: 100px;
       padding-top: 50px;
       display: flex;
+      flex-direction: row;
       &-content {
         flex: 0 0 45%;
         padding-top: 100px;
@@ -151,6 +152,7 @@ textarea {
   }
 
   .objective {
+    all: unset;
     display: flex;
     padding: 50px 100px;
 
@@ -175,6 +177,8 @@ textarea {
     background: #fff;
     padding: 0 20px;
     display: flex;
+
+    flex-direction: row;
     padding: 20px 100px;
 
     &-intro {

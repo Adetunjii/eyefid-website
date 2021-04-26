@@ -85,6 +85,7 @@
 
     &__list {
       display: flex;
+      flex-direction: row;
       flex-wrap: wrap;
       padding: 50px 100px;
       justify-content: space-around;
