@@ -11,6 +11,7 @@ import { InsightsComponent } from './insights/insights.component';
 import { HairBusinessComponent } from './insights/hair-business/hair-business.component';
 import { LogisticsComponent } from './insights/logistics/logistics.component';
 import { BeautyProductsComponent } from './insights/beauty-products/beauty-products.component';
+import { CtaComponent } from './reusables/cta/cta.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { BeautyProductsComponent } from './insights/beauty-products/beauty-produ
     InsightsComponent,
     HairBusinessComponent,
     LogisticsComponent,
-    BeautyProductsComponent
+    BeautyProductsComponent,
+    CtaComponent
   ],
   imports: [
     BrowserModule,
