@@ -1,0 +1,135 @@
+@import "../../../assets/scss/config.scss";
+
+.header {
+  &-img {
+    height: 50vh;
+    position: relative;
+    background-color: cadetblue;
+    background-blend-mode: multiply;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 50vh;
+      object-position: top;
+      object-fit: cover;
+    }
+  }
+
+  // &-title {
+  //   position: absolute;
+  //   top: 50%;
+  //   left: 130px;
+  //   color: white;
+  // }
+}
+
+.qna {
+  padding: 20px;
+
+  h1 {
+    color: $header-color;
+  }
+
+  p {
+    color: $text-color;
+    font-size: 14px;
+    line-height: 150%;
+  }
+
+  ul {
+    list-style-type: circle;
+  }
+
+  li {
+    color: $text-color;
+    font-size: 14px;
+    line-height: 150%;
+  }
+}
+
+.gs-btn {
+  border: none;
+  border-radius: 100px;
+  background: #192b3f;
+  padding: 20px;
+  width: 30%;
+  text-align: center;
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.prc {
+  display: flex;
+  justify-content: center;
+}
+
+@include media-lg {
+  .header {
+    &-img {
+      height: 50vh;
+      position: relative;
+      background-color: cadetblue;
+      background-blend-mode: multiply;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 50vh;
+        object-position: top;
+        object-fit: cover;
+      }
+    }
+
+    // &-title {
+    //   position: absolute;
+    //   top: 50%;
+    //   left: 130px;
+    //   color: white;
+    // }
+  }
+
+  .qna {
+    padding: 20px 100px;
+
+    h1 {
+      color: $header-color;
+    }
+
+    p {
+      color: $text-color;
+      font-size: 16px;
+      line-height: 150%;
+    }
+
+    ul {
+      list-style-type: circle;
+    }
+
+    li {
+      color: $text-color;
+      font-size: 16px;
+      line-height: 150%;
+    }
+  }
+
+  .gs-btn {
+    border: none;
+    border-radius: 100px;
+    background: #192b3f;
+    padding: 20px;
+    width: 20%;
+    text-align: center;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .prc {
+    display: flex;
+    justify-content: center;
+  }
+}

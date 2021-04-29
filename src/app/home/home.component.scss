@@ -13,7 +13,7 @@
 
     &__container {
       flex: 0 0 50%;
-      margin-top: 50px;
+      margin-top: 20px;
       h1 {
         font-size: 28px;
         font-weight: 700;
@@ -22,7 +22,7 @@
       }
 
       p {
-        width: 75%;
+        width: 85%;
         font-size: 14px;
         line-height: 26px;
         color: $text-color;
@@ -233,10 +233,67 @@
   }
 }
 
+.pricing {
+  margin: 50px auto;
+  padding: 0 20px;
+  &-header {
+    text-align: center;
+
+    h1 {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 36px;
+      color: $header-color;
+    }
+
+    p {
+      color: $text-color;
+    }
+  }
+
+  &-packages {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+  }
+
+  &-package {
+    flex: 0 0 72%;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid $text-color;
+    border-radius: 10px;
+
+    &-header {
+      margin: 40px auto;
+      h3 {
+        font-size: 18px;
+        color: $header-color;
+      }
+    }
+
+    &-features {
+      ul {
+        list-style: circle;
+        margin: 20px auto;
+      }
+
+      li {
+        margin: 10px auto;
+      }
+    }
+
+    &:hover {
+      background-color: $primary-color;
+    }
+  }
+}
+
 @include media-lg {
   .home {
     position: relative;
     &-intro {
+      all: unset;
       background: $primary-color;
       display: flex;
       flex-direction: row;
@@ -281,8 +338,7 @@
     display: flex;
     padding: 50px 100px;
     align-items: center;
-    scroll-snap-align: center;
-
+    justify-content: space-between;
     &-header {
       flex: 0 0 40%;
 
@@ -295,12 +351,13 @@
 
       h1 {
         color: $header-color;
+        font-size: 28px;
         font-weight: 600;
       }
     }
 
     &-text {
-      flex: 0 0 50%;
+      flex: 0 0 45%;
       font-weight: 18px;
       color: $text-color;
     }
@@ -462,5 +519,71 @@
       img {
       }
     }
+  }
+
+  .pricing {
+    margin: 50px auto;
+    padding: 0 100px;
+    &-header {
+      text-align: center;
+
+      h1 {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 36px;
+        color: $header-color;
+      }
+
+      p {
+        color: $text-color;
+      }
+    }
+
+    &-packages {
+      display: flex;
+      flex-direction: row;
+      overflow-x: scroll;
+    }
+
+    &-package {
+      flex: 0 0 22%;
+      padding: 20px;
+      margin: 20px;
+      border: 1px solid $text-color;
+      border-radius: 10px;
+
+      &-header {
+        margin: 40px auto;
+        h3 {
+          font-size: 18px;
+          color: $header-color;
+        }
+      }
+
+      &-features {
+        ul {
+          list-style: circle;
+          margin: 20px auto;
+        }
+
+        li {
+          margin: 10px auto;
+        }
+      }
+
+      &:hover {
+        background-color: $primary-color;
+      }
+    }
+  }
+
+  .reach-out-btn {
+    text-align: center;
+    background: $header-color;
+    color: #fff;
+    padding: 10px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 40px auto;
   }
 }

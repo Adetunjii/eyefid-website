@@ -125,7 +125,7 @@
         </svg>
       </div>
       <div>
-        <h1 class="card-header">Appointment with a consultant</h1>
+        <h1 class="card-header">Product and business development</h1>
         <p class="card-text">
           We help you in building your business from idea to profitability by
           assisting with how your product should be develop to gain wider market
@@ -217,6 +217,36 @@
         expert in your sector who has successfully grown their business from
         zero to a profitable one.
       </p>
+    </div>
+  </div>
+
+  <div class="pricing">
+    <div class="pricing-header">
+      <h1>Ready to create your business plan?</h1>
+      <p>Choose the package that suits you</p>
+    </div>
+
+    <div class="pricing-packages">
+      <div class="pricing-package" *ngFor="let item of data">
+        <div class="pricing-package-header">
+          <h3>{{ item?.header }}</h3>
+          <p></p>
+        </div>
+
+        <div class="pricing-package-amount">
+          <h1>{{ item.price }}</h1>
+        </div>
+
+        <div class="reach-out-btn">Proceed</div>
+
+        <div class="pricing-package-features">
+          <ul>
+            <li>lorem ipsum</li>
+            <li>lorem ipsum</li>
+            <li>lorem ipsum</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 </div>

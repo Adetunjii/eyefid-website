@@ -8,6 +8,9 @@ import { NavbarComponent } from './reusables/static/navbar/navbar.component';
 import { FooterComponent } from './reusables/static/footer/footer.component';
 import { AboutComponent } from './about/about.component';
 import { InsightsComponent } from './insights/insights.component';
+import { HairBusinessComponent } from './insights/hair-business/hair-business.component';
+import { LogisticsComponent } from './insights/logistics/logistics.component';
+import { BeautyProductsComponent } from './insights/beauty-products/beauty-products.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { InsightsComponent } from './insights/insights.component';
     NavbarComponent,
     FooterComponent,
     AboutComponent,
-    InsightsComponent
+    InsightsComponent,
+    HairBusinessComponent,
+    LogisticsComponent,
+    BeautyProductsComponent
   ],
   imports: [
     BrowserModule,
