@@ -19,14 +19,10 @@
 
       <div class="gs-btn">Get Started</div>
     </div>
-    <div class="home-intro__img-container">
-      <img
-        src="../../assets/img/image-from-rawpixel-id-2020085-png.png"
-        alt="model"
-      />
-      <!-- <div class="card">
-        <p>Don't know how to create a business plan??</p>
-      </div> -->
+    <div class="home-intro__img-container" (deferLoad)="image1.show = true">
+      <ng-container *ngIf="image1.show">
+        <img src="{{ image1.url }}" alt="model" />
+      </ng-container>
 
       <div class="dot ylc"></div>
       <div class="dot brs"></div>
@@ -199,14 +195,18 @@
         meets your need.
       </p>
     </div>
-    <div class="cwbp-img">
-      <img src="../../assets/img/business-plan.png" alt="business strategy" />
+    <div class="cwbp-img" (deferLoad)="cwbpImg.show = true">
+      <ng-container *ngIf="cwbpImg.show">
+        <img src="{{ cwbpImg.url }}" alt="business strategy" />
+      </ng-container>
     </div>
   </div>
 
   <div class="swae">
-    <div class="swae-img">
-      <img src="../../assets/img/consultancy.jpg" alt="" />
+    <div class="swae-img" (deferLoad)="csltImg.show = true">
+      <ng-container *ngIf="csltImg.show">
+        <img src="{{ csltImg.url }}" alt=""
+      /></ng-container>
     </div>
     <div class="cwbp-content">
       <h1>Speak to a Consultant</h1>

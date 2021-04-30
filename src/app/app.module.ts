@@ -12,6 +12,7 @@ import { HairBusinessComponent } from './insights/hair-business/hair-business.co
 import { LogisticsComponent } from './insights/logistics/logistics.component';
 import { BeautyProductsComponent } from './insights/beauty-products/beauty-products.component';
 import { CtaComponent } from './reusables/cta/cta.component';
+import { DeferLoadModule } from '@trademe/ng-defer-load';
 
 @NgModule({
   declarations: [
@@ -24,13 +25,10 @@ import { CtaComponent } from './reusables/cta/cta.component';
     HairBusinessComponent,
     LogisticsComponent,
     BeautyProductsComponent,
-    CtaComponent
+    CtaComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, DeferLoadModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

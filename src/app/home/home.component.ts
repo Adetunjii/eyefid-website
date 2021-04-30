@@ -6,6 +6,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
+  image1: any = {
+    url: '../../assets/img/image-from-rawpixel-id-2020085-png.png',
+    show: false,
+  };
+
+  cwbpImg: any = {
+    url: '../../assets/img/business-plan.png',
+    show: false,
+  };
+
+  csltImg: any = {
+    url: '../../assets/img/consultancy.jpg',
+    show: false,
+  };
+
   data: any = [
     { header: 'Global standard business Plan starting', price: 'N14,590' },
     {
