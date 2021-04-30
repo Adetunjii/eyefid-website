@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   image1: any = {
-    url: '../../assets/img/image-from-rawpixel-id-2020085-png-2.png',
+    url: '../../assets/img/image-from-rawpixel-id-2020085-png-2-3.png',
     show: false,
   };
 
