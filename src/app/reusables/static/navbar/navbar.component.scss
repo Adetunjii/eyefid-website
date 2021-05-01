@@ -133,4 +133,9 @@
   .nav-toggle-label {
     display: none;
   }
+
+  .d-none {
+    display: flex !important;
+    visibility: visible !important;
+  }
 }
