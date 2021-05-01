@@ -4,7 +4,11 @@
   </div>
 
   <input type="checkbox" class="nav-toggle" id="nav-toggle" />
-  <label for="nav-toggle" class="nav-toggle-label">
+  <label
+    for="nav-toggle"
+    class="nav-toggle-label"
+    (click)="isHidden = !isHidden"
+  >
     <svg
       xmlns="http://www.w3.org/2000/svg"
       class="icon icon-tabler icon-tabler-menu-2"
@@ -24,9 +28,15 @@
     </svg>
   </label>
 
-  <ul class="nav-items">
-    <li class="nav-item" routerLink="/about">About Us</li>
-    <li class="nav-item" routerLink="/insights">Insights</li>
-    <li class="nav-item" routerLink="/pricing">Pricing</li>
+  <ul class="nav-items" [ngClass]="{ 'd-none': isHidden }">
+    <li class="nav-item" routerLink="/about" (click)="isHidden = true">
+      About Us
+    </li>
+    <li class="nav-item" routerLink="/insights" (click)="isHidden = true">
+      Insights
+    </li>
+    <li class="nav-item" routerLink="/pricing" (click)="isHidden = true">
+      Pricing
+    </li>
   </ul>
 </nav>

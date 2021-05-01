@@ -23,10 +23,10 @@
   &-items {
     display: none;
     position: absolute;
-    width: 85vw;
     text-align: left;
     top: 10%;
     left: 0;
+    right: 0;
     margin: 0;
     padding: 50px 30px;
     list-style: none;
@@ -53,6 +53,10 @@
   flex-direction: column;
 }
 
+.nav-item + .nav-items {
+  display: none;
+}
+
 .nav-toggle {
   display: none;
 }
@@ -63,6 +67,11 @@
   top: 10px;
   display: flex;
   align-items: center;
+}
+
+.d-none {
+  display: none;
+  visibility: hidden !important;
 }
 
 @include media-lg {

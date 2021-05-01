@@ -7,21 +7,20 @@
   <div class="pricing-packages">
     <div class="pricing-package" *ngFor="let item of data">
       <div class="pricing-package-header">
-        <h3>{{ item?.header }}</h3>
-        <p></p>
+        <h3 [ngClass]="item?.headerClass">{{ item?.header }}</h3>
+        <p>{{ item?.subheader }}</p>
       </div>
 
       <div class="pricing-package-amount">
         <h1>{{ item.price }}</h1>
       </div>
 
-      <div class="reach-out-btn">Proceed</div>
+      <div class="reach-out-btn" [ngClass]="item.headerClass">Proceed</div>
 
       <div class="pricing-package-features">
-        <ul>
-          <li>lorem ipsum</li>
-          <li>lorem ipsum</li>
-          <li>lorem ipsum</li>
+        <p>Document includes:</p>
+        <ul *ngFor="let feature of item?.features">
+          <li>{{ feature }}</li>
         </ul>
       </div>
     </div>
