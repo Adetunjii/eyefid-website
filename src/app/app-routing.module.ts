@@ -19,6 +19,11 @@ const routes: Routes = [
       import('./about/about.module').then((m) => m.AboutModule),
   },
   {
+    path: 'pricing',
+    loadChildren: () =>
+      import('./pricing/pricing.module').then((m) => m.PricingModule),
+  },
+  {
     path: 'insights',
     children: [
       { path: '', component: InsightsComponent },

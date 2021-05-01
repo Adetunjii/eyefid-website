@@ -7,6 +7,7 @@
   flex: row;
   align-items: center;
   box-shadow: 1px 1px 3px -3px #000;
+  z-index: 999;
   &-logo {
     flex: 0 0 10%;
     &:focus {

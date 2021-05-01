@@ -13,6 +13,7 @@ import { CtaComponent } from './reusables/cta/cta.component';
 import { DeferLoadModule } from '@trademe/ng-defer-load';
 import { AboutModule } from './about/about.module';
 import { HomeModule } from './home/home.module';
+import { PricingModule } from './pricing/pricing.module';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { HomeModule } from './home/home.module';
     DeferLoadModule,
     AboutModule,
     HomeModule,
+    PricingModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

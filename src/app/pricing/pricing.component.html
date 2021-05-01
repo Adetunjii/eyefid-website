@@ -1,0 +1,29 @@
+<div class="pricing">
+  <div class="pricing-intro">
+    <h1 class="pricing-intro__header">Ready to create your business plan?</h1>
+    <p class="pricing-intro__text">Choose a package that suits you</p>
+  </div>
+
+  <div class="pricing-packages">
+    <div class="pricing-package" *ngFor="let item of data">
+      <div class="pricing-package-header">
+        <h3>{{ item?.header }}</h3>
+        <p></p>
+      </div>
+
+      <div class="pricing-package-amount">
+        <h1>{{ item.price }}</h1>
+      </div>
+
+      <div class="reach-out-btn">Proceed</div>
+
+      <div class="pricing-package-features">
+        <ul>
+          <li>lorem ipsum</li>
+          <li>lorem ipsum</li>
+          <li>lorem ipsum</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
